@@ -1,0 +1,2 @@
+"use strict";function _type_of(e){return e&&"undefined"!=typeof Symbol&&e.constructor===Symbol?"symbol":typeof e}var food={Drink:{Wine:{},Schnaps:{}},Fruit:{Red:{Cherry:{},Strawberry:{}},Yellow:{Banana:{},Pineapple:{}}}},tree=document.querySelector("#tree");function createTree(e,t){var r=document.createElement("ul");for(var n in t){var o=document.createElement("li");o.textContent=n,"object"===_type_of(t[n])&&null!==t[n]&&createTree(o,t[n]),r.append(o)}""!==r.innerHTML&&e.append(r)}createTree(tree,food);
+//# sourceMappingURL=js_tree-from-object-DOM.1b005fd8.js.map
